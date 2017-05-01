@@ -1,0 +1,125 @@
+$color_blue: #18AFD3;
+$color_orange: #F57E57;
+$color_gray: #F1F3F9;
+$color_black: #434445;
+$value: 10px;
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.orange_underline{
+    background: #F57E57;
+    width: 80px;
+    height: 4px;
+    margin: 16px 0;
+}
+
+@mixin transition($second){
+    transition: all $second ease-in-out;
+}   
+
+@mixin circle_create($width,$height,$bg,$font_size){
+    width: $width+px;
+    height: $height+px;
+    text-align: center;
+    border-radius: 100%;
+    background: $bg;
+    color:white;
+    font-size: $font_size+px;
+}
+
+@mixin button{
+    border-radius: 30px;
+    padding: 11px 45px;
+    font-family: Oswald;
+    font-size: 17px;
+    color: white;
+    background: $color_orange;
+    border: none;
+    outline: 0;
+    @include transition(.2s);
+    cursor:pointer;
+    text-transform: uppercase; 
+    &:hover{
+        background: $color_blue;
+    }
+    &:focus{
+        background: $color_blue;
+    }
+}
+
+.active_circle{
+    @include circle_create(13,13,$color_blue,10);
+    box-shadow: 0px 0px 0px 6px #C1E3F0;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.circle{
+    @include circle_create(13,13,#E5E5E5,10);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    &:hover{
+        background: $color_blue;
+    }
+}
+
+.underline{
+    height: 1px;
+    background: lightgray;
+    margin-top: 15px;
+    position: relative;
+    border: 0;
+}
+
+.underline::before{
+    content: "";
+    width: 15%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $color_orange;
+}
+
+@mixin common_li{
+    padding: 0;
+    margin: 25px 0;
+    position: relative;
+    transition: all .4s ease-in-out;
+    &:hover{
+        background: none;  
+        color:$color_orange;
+        i{
+            display: block;
+        }                                    
+    }
+    i{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 4px;  
+    }
+
+    a{
+        p{
+            font: 14px "Lato";
+            color: $color_blue;
+            text-transform: none;
+            position: relative;
+            transition: all .4s ease-in-out;
+            &:hover{
+                margin-left: 25px;
+                color:$color_orange;   
+            }
+        }                                    
+    }
+}
+
+.margin_top{
+    margin-top: -20px;
+}

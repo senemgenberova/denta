@@ -1,0 +1,219 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.orange_underline {
+  background: #F57E57;
+  width: 80px;
+  height: 4px;
+  margin: 16px 0; }
+
+.active_circle {
+  width: 13px;
+  height: 13px;
+  text-align: center;
+  border-radius: 100%;
+  background: #18AFD3;
+  color: white;
+  font-size: 10px;
+  box-shadow: 0px 0px 0px 6px #C1E3F0;
+  margin-left: 20px;
+  cursor: pointer; }
+
+.circle {
+  width: 13px;
+  height: 13px;
+  text-align: center;
+  border-radius: 100%;
+  background: #E5E5E5;
+  color: white;
+  font-size: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all .4s ease-in-out; }
+  .circle:hover {
+    background: #18AFD3; }
+
+.underline {
+  height: 1px;
+  background: lightgray;
+  margin-top: 15px;
+  position: relative;
+  border: 0; }
+
+.underline::before {
+  content: "";
+  width: 15%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #F57E57; }
+
+.margin_top {
+  margin-top: -20px; }
+
+.main .header .header_access {
+  display: none; }
+.main .header .top_header .details {
+  padding: 35px 0; }
+  .main .header .top_header .details .contacts .head_icon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    background: #E5E5E5;
+    color: white;
+    font-size: 22px; }
+    .main .header .top_header .details .contacts .head_icon span {
+      transform: translate(0%, 50%);
+      color: #18AFD3; }
+  .main .header .top_header .details .contacts .icon_info {
+    font: 15px "Lato";
+    margin-top: 5px; }
+    .main .header .top_header .details .contacts .icon_info:hover {
+      text-decoration: underline; }
+.main .header .top_header .pages {
+  color: white;
+  height: 61px;
+  background: #18AFD3;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 0px 6px 0px lightgrey; }
+  .main .header .top_header .pages .main_list {
+    display: flex;
+    margin-left: 15px; }
+    .main .header .top_header .pages .main_list li {
+      padding: 18px 24px;
+      text-transform: uppercase;
+      font-family: Oswald;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all .3s; }
+      .main .header .top_header .pages .main_list li .inner_pages {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0px 7px 20px 0px lightgrey; }
+        .main .header .top_header .pages .main_list li .inner_pages .common {
+          margin: 25px; }
+          .main .header .top_header .pages .main_list li .inner_pages .common h4 {
+            color: #434445; }
+          .main .header .top_header .pages .main_list li .inner_pages .common ul li {
+            padding: 0;
+            margin: 25px 0;
+            position: relative;
+            transition: all .4s ease-in-out; }
+            .main .header .top_header .pages .main_list li .inner_pages .common ul li:hover {
+              background: none;
+              color: #F57E57; }
+              .main .header .top_header .pages .main_list li .inner_pages .common ul li:hover i {
+                display: block; }
+            .main .header .top_header .pages .main_list li .inner_pages .common ul li i {
+              display: none;
+              position: absolute;
+              left: 0;
+              top: 4px; }
+            .main .header .top_header .pages .main_list li .inner_pages .common ul li a p {
+              font: 14px "Lato";
+              color: #18AFD3;
+              text-transform: none;
+              position: relative;
+              transition: all .4s ease-in-out; }
+              .main .header .top_header .pages .main_list li .inner_pages .common ul li a p:hover {
+                margin-left: 25px;
+                color: #F57E57; }
+      .main .header .top_header .pages .main_list li .inner_list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 20%;
+        box-shadow: 0 0 25px lightgrey; }
+        .main .header .top_header .pages .main_list li .inner_list ul li {
+          padding: 0;
+          margin: 25px 0;
+          position: relative;
+          transition: all .4s ease-in-out;
+          margin: 15px 25px; }
+          .main .header .top_header .pages .main_list li .inner_list ul li:hover {
+            background: none;
+            color: #F57E57; }
+            .main .header .top_header .pages .main_list li .inner_list ul li:hover i {
+              display: block; }
+          .main .header .top_header .pages .main_list li .inner_list ul li i {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 4px; }
+          .main .header .top_header .pages .main_list li .inner_list ul li a p {
+            font: 14px "Lato";
+            color: #18AFD3;
+            text-transform: none;
+            position: relative;
+            transition: all .4s ease-in-out; }
+            .main .header .top_header .pages .main_list li .inner_list ul li a p:hover {
+              margin-left: 25px;
+              color: #F57E57; }
+        .main .header .top_header .pages .main_list li .inner_list hr {
+          margin: 0 20px; }
+      .main .header .top_header .pages .main_list li i {
+        font-size: 10px;
+        position: relative;
+        top: -3px;
+        left: 9px; }
+      .main .header .top_header .pages .main_list li.active {
+        background: #F57E57; }
+      .main .header .top_header .pages .main_list li:hover {
+        background: #F57E57; }
+      .main .header .top_header .pages .main_list li a {
+        color: white; }
+        .main .header .top_header .pages .main_list li a:hover {
+          color: white; }
+  .main .header .top_header .pages .search {
+    position: absolute;
+    right: 3%;
+    font-size: 16px;
+    top: 20px;
+    cursor: pointer; }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .pages .main_list {
+    justify-content: center;
+    margin-left: 0 !important; }
+    .pages .main_list li {
+      padding: 18px 14px !important;
+      font-size: 17px; }
+  .pages .search {
+    right: 8%; }
+
+  .icon_info:nth-child(1) p {
+    width: 106%; } }
+@media screen and (max-width: 991px) {
+  .header .top_header {
+    display: none; }
+  .header .header_access {
+    display: block !important;
+    height: 45px;
+    background: wheat;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 25px;
+    color: #434445; }
+    .header .header_access .inner_access {
+      margin: 8px;
+      display: flex;
+      justify-content: space-between; }
+    .header .header_access .access_logo img {
+      width: 120px; } }
+@media screen and (max-width: 479px) {
+  .inner_access .access_logo {
+    display: none; } }
+
+/*# sourceMappingURL=typo.css.map */

@@ -1,0 +1,57 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.orange_underline {
+  background: #F57E57;
+  width: 80px;
+  height: 4px;
+  margin: 16px 0; }
+
+.active_circle {
+  width: 13px;
+  height: 13px;
+  text-align: center;
+  border-radius: 100%;
+  background: #18AFD3;
+  color: white;
+  font-size: 10px;
+  box-shadow: 0px 0px 0px 6px #C1E3F0;
+  margin-left: 20px;
+  cursor: pointer; }
+
+.circle {
+  width: 13px;
+  height: 13px;
+  text-align: center;
+  border-radius: 100%;
+  background: #E5E5E5;
+  color: white;
+  font-size: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all .4s ease-in-out; }
+  .circle:hover {
+    background: #18AFD3; }
+
+.underline {
+  height: 1px;
+  background: lightgray;
+  margin-top: 15px;
+  position: relative;
+  border: 0; }
+
+.underline::before {
+  content: "";
+  width: 15%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #F57E57; }
+
+.margin_top {
+  margin-top: -20px; }
+
+/*# sourceMappingURL=commons.css.map */

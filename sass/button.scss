@@ -1,0 +1,112 @@
+@import 'footer';
+@import 'head';
+
+
+.main{
+    .page_background{
+        background: url("../img/bg_page.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 45px 0;
+        color:white;
+        .page_heading{
+            h1{
+                font: 70px Oswald;
+            }
+            margin-bottom: 45px;
+        }
+        .page_direction{
+            margin-top:15px;
+            font-size: 15px;
+            a{
+                color:white
+            }
+            i{
+                margin: 0 15px;
+                color: lighten($color_blue,20);
+            }
+        }
+    }
+
+    .button_heading{
+        max-width: 770px;
+        h3{
+            font-family: Oswald;
+            font-size: 20px;
+        }
+    }
+
+    .buttons{
+        .button_size{
+            padding: 55px 0 40px;
+            button{
+                margin-right: 20px;
+                @include button;
+                &.btn-lg{
+                    padding: 20px 50px;
+                }
+                &.btn-sm{
+                    padding: 7px 30px;
+                }
+            }
+        }
+
+        .button_shape{
+            padding: 55px 0 40px;
+            button{
+                @include button;
+                margin-right: 20px;
+                &.btn-round{
+                    border-radius: 5px;
+                }
+                &.btn-square{
+                    border-radius: 0;
+                }
+            }
+        }
+
+        .button_icons{
+            padding: 55px 0 40px;
+            button{
+                @include button;
+                margin-right: 30px;
+                i{
+                    margin: 0 5px;
+                    font-size: 21px;
+                }
+            }
+        }
+
+        .button_shadow{
+            padding: 50px 0 85px;
+            button{
+                @include button;
+                box-shadow: 1px 5px 10px lightgrey;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px){
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 14px !important;
+         button{
+            margin: 20px;
+        }
+    }
+
+    .page_background{
+        text-align: center;
+        .page_heading {
+            margin-bottom: 30px !important;
+            h1{
+                font-size: 40px !important;
+            }
+        }
+    }
+}
