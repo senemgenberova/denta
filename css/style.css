@@ -1010,6 +1010,13 @@ ul {
   .main .top-header .location {
     display: none; } }
 @media screen and (max-width: 480px) {
+  .member_info {
+    flex-direction: column !important; }
+
+  .member_contact {
+    margin-top: 0 !important;
+    margin-left: 0 !important; }
+
   .denta_table .event_content .days {
     display: block !important;
     margin-bottom: 15px; }
