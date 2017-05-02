@@ -106,7 +106,7 @@ $(document).ready(function(){
 	bar.click(function(){
 		if($(this).find("span").attr("class") == "glyphicon glyphicon-menu-hamburger"){
 			$(this).find("span").removeClass("glyphicon-menu-hamburger").addClass("glyphicon-remove");
-			$(this).animate({left: "23%"},'fast',function(){
+			$(this).animate({left: "310px"},'fast',function(){
 				$(".side_list").css("display","block").animate({
 					left: 0
 				},'fast');	
@@ -141,19 +141,16 @@ $(document).ready(function(){
 			
 		})
 	})
-});
 
-// if(ell.css("display","block") == true ){
-	// 	ell.click(function(){
-	// 		if($(this).find("span").attr("class") == "glyphicon glyphicon-option-vertical"){
-	// 			$(this).find("span").removeClass("glyphicon-option-vertical").addClass("glyphicon-remove");	
-	// 		}
-	// 		else if($(this).find("span").attr("class") == "glyphicon glyphicon-remove"){
-	// 			$(this).find("span").removeClass("glyphicon-remove").addClass("glyphicon-option-vertical");	
-	// 		}
-	// 		$(".ell_list").toggle();
-	// 	})	
-	// }
-	// else{
-	// 	$(".ell_list").hide();
-	// }
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 480){
+			$("#scroll_top").animate({bottom: "55px"},20).css("display","block");
+			$("#scroll_top").click(function(){
+				$(window).reset();
+			})
+		}
+		else{
+			$("#scroll_top").css("z-index",2).css("bottom","-60px");
+		}
+	})
+});

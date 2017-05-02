@@ -79,6 +79,28 @@
                     margin-top:12px
                 }
             }
+
+            #scroll_top{
+                display: none;
+                @include circle_create(50, 50, $color_orange, 22);
+                position: fixed;
+                @include transition(.3s);
+                bottom: -60px;
+                right: 30px;
+                box-shadow: 0 0 12px 0px rgba(0,0,0,.2);
+                z-index: 10;
+                cursor: pointer;
+                // transition: .3s;
+                span{
+                    margin-top:13px;
+                    color: white;
+                }
+                &:hover{
+                    background: $color_blue;
+                    color: white;
+                }
+            }
+
             .ell_list{
                 display: none;
             }
@@ -1164,10 +1186,6 @@
                     font-size: 25px;
                     cursor: pointer;                    
                 }
-            }
-
-            .side_list{
-
             }
         }
 

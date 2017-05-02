@@ -125,6 +125,28 @@ ul {
       display: none; }
       .main .side_menu .side_icons #ell span {
         margin-top: 12px; }
+    .main .side_menu .side_icons #scroll_top {
+      display: none;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 100%;
+      background: #F57E57;
+      color: white;
+      font-size: 22px;
+      position: fixed;
+      transition: all 0.3s ease-in-out;
+      bottom: -60px;
+      right: 30px;
+      box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+      cursor: pointer; }
+      .main .side_menu .side_icons #scroll_top span {
+        margin-top: 13px;
+        color: white; }
+      .main .side_menu .side_icons #scroll_top:hover {
+        background: #18AFD3;
+        color: white; }
     .main .side_menu .side_icons .ell_list {
       display: none; }
     .main .side_menu .side_logo {
