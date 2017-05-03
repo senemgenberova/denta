@@ -142,12 +142,16 @@ $(document).ready(function(){
 		})
 	})
 
+	$("#scroll_top").click(function(event){
+				event.preventDefault();
+				$("body, html").animate({
+					scrollTop: 0
+				},500);
+			});
+
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 480){
 			$("#scroll_top").animate({bottom: "55px"},20).css("display","block");
-			$("#scroll_top").click(function(){
-				$(window).reset();
-			})
 		}
 		else{
 			$("#scroll_top").css("z-index",2).css("bottom","-60px");
